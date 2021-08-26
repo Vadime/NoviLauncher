@@ -15,7 +15,6 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         RecyclerView recyclerView = new RecyclerView(this);
-        recyclerView.setBackground(getResources().getDrawable(R.drawable.main_background, getTheme()));
         recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
         recyclerView.setAdapter(new AppListAdapter(this));
         setContentView(recyclerView);
